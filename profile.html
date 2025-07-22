@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Profile</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .profile-container {
+      max-width: 900px;
+      margin: 4rem auto;
+      padding: 2rem;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .profile-header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .profile-header h1 {
+      font-size: 2.5rem;
+      color: #2d3436;
+    }
+
+    .profile-info {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .profile-info p {
+      font-size: 1.1rem;
+      color: #636e72;
+    }
+
+    .progress-section {
+      margin-top: 2rem;
+    }
+
+    .course-progress {
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      border: 1px solid #dfe6e9;
+      border-radius: 8px;
+      background-color: #f5f6fa;
+    }
+
+    .course-progress h2 {
+      font-size: 1.4rem;
+      color: #2c3e50;
+      margin-bottom: 0.5rem;
+    }
+
+    .progress-bar {
+      background-color: #dcdde1;
+      border-radius: 20px;
+      overflow: hidden;
+      height: 20px;
+      margin-bottom: 1rem;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background-color: #0984e3;
+      width: 60%; /* dynamically set this value */
+      border-radius: 20px;
+      transition: width 0.4s ease;
+    }
+
+    .course-progress .btn {
+      text-decoration: none;
+      padding: 0.6rem 1.2rem;
+      background-color: #0984e3;
+      color: #fff;
+      border-radius: 20px;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    .course-progress .btn:hover {
+      background-color: #74b9ff;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">EduLearn</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="profile-container">
+    <div class="profile-header">
+      <h1>Welcome, John Doe</h1>
+    </div>
+    <div class="profile-info">
+      <p>Email: john@example.com</p>
+      <p>Member since: January 2025</p>
+    </div>
+
+    <div class="progress-section">
+      <div class="course-progress">
+        <h2>Introduction to Python</h2>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 70%;"></div>
+        </div>
+        <a href="python-course.html" class="btn">Continue Course</a>
+      </div>
+
+      <div class="course-progress">
+        <h2>Web Development Basics</h2>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 40%;"></div>
+        </div>
+        <a href="webdev.-coursehtml" class="btn">Continue Course</a>
+      </div>
+
+      <div class="course-progress">
+        <h2>Data Science Foundations</h2>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 20%;"></div>
+        </div>
+        <a href="datasci-course.html" class="btn">Continue Course</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
